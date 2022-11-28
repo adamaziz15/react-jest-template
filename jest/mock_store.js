@@ -13,7 +13,7 @@ export const createMockStore = ()=>{
 	let store = createStore(allReducers, initialState, applyMiddleware(...middlewares));
 	store.dispatch({
     type: 'SOMETHING_NECESSARY',
-    value:: 'something_necessary_when_start_app'
+    value: 'something_necessary_when_start_app'
   });
 	return store;
 }

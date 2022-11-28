@@ -8,7 +8,7 @@ global.fetch = jest.fn().mockImplementation((endpoint, extra)=>{
     if(endpoint.includes('/endpoint1')){
       return apiResponse.endpoint1;
     }
-    else if(){
+    else if(endpoint.includes('/endpoint2')){
       return apiResponse.endpoint2;
     }
     else{
