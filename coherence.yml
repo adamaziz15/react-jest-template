@@ -1,0 +1,13 @@
+frontend:
+  type: frontend
+  # index_file_name: index.html
+  url_path: /
+  repo_path: /
+  assets_path: build
+  docs: []
+  local_packages: [{"src": "node_modules", "dest": "node_modules"}]
+  build: ["npm", "run", "build"]
+  test: ["npm", "run", "test"]
+  dev: ["npm", "run", "start"]
+  prod:
+    dockerfile: "Dockerfile"
